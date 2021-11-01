@@ -54,6 +54,31 @@ let journal = [
     /* and so on... */
 ];
 console.log("\n\n\n\n\n NEW OBJECT JOURNAL")
-console.log("journal array:",journal)
-console.log("journal array 2nd element",journal[1])
-console.log("journal array 2nd element's events object",journal[1].events)
+console.log("journal array:", journal);
+console.log("journal array 2nd element", journal[1]);
+console.log("journal array 2nd element's events object", journal[1].events);
+
+
+
+//==================================================================
+let journal21 = [];
+
+function addEntry(events, squirrel) {
+  journal21.push({events, squirrel});
+}
+
+addEntry(["work", "touched tree", "pizza", "running",
+          "television"], false);
+addEntry(["work", "ice cream", "cauliflower", "lasagna",
+          "touched tree", "brushed teeth"], false);
+addEntry(["weekend", "cycling", "break", "peanuts",
+    "beer"], true);
+          
+console.log(journal21);
+
+
+//Array loops
+for (let i = 0; i < books.length; i++) {
+    let entry = books[i];
+    // Do something with entry
+  }
